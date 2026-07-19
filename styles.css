@@ -1339,3 +1339,40 @@ footer p {
         right: 20px !important;
     }
 }
+
+/* --- Promo Banner --- */
+.promo-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 8px 10px;
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    z-index: 1001;
+    text-transform: uppercase;
+    animation: slideDown 0.5s ease-out forwards;
+}
+
+.navbar {
+    top: 34px !important; /* Push navbar down so it doesn't hide behind banner */
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+@media screen and (max-width: 768px) {
+    .promo-banner {
+        font-size: 0.7rem;
+        padding: 6px 5px;
+    }
+    .navbar {
+        top: 26px !important;
+    }
+}
