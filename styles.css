@@ -1177,3 +1177,44 @@ footer p {
         font-size: 1.5rem;
     }
 }
+
+/* --- Logo Styling and Animation --- */
+.brand-logo {
+    height: 60px; /* Adjust based on navbar height */
+    width: auto;
+    object-fit: contain;
+    animation: breathing-glow 3s infinite alternate;
+    transition: transform 0.3s ease;
+}
+
+.brand-logo:hover {
+    transform: scale(1.1) rotate(-5deg);
+    animation: intense-glow 0.5s infinite alternate;
+}
+
+.footer-brand-logo {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 0 5px rgba(255, 51, 51, 0.5));
+}
+
+@keyframes breathing-glow {
+    0% {
+        filter: drop-shadow(0 0 5px rgba(255, 51, 51, 0.2));
+        transform: scale(1);
+    }
+    100% {
+        filter: drop-shadow(0 0 15px rgba(255, 51, 51, 0.6));
+        transform: scale(1.02);
+    }
+}
+
+@keyframes intense-glow {
+    0% {
+        filter: drop-shadow(0 0 15px rgba(255, 51, 51, 0.8));
+    }
+    100% {
+        filter: drop-shadow(0 0 30px rgba(255, 51, 51, 1));
+    }
+}
