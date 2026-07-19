@@ -1283,3 +1283,59 @@ footer p {
 .faq-item p strong {
     color: var(--text-primary);
 }
+
+/* --- CRITICAL MOBILE FIXES --- */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        padding: 1rem 5% !important;
+        height: 70px !important;
+    }
+    .nav-links {
+        display: none !important; /* Hide text links to save space */
+    }
+    .btn-call {
+        display: none !important; /* Hide call button, they use WhatsApp */
+    }
+    .brand-logo {
+        height: 40px !important; /* Smaller logo for mobile */
+    }
+    .hero {
+        padding-top: 100px !important;
+        text-align: center;
+        flex-direction: column !important;
+    }
+    .hero-content {
+        margin-bottom: 2rem;
+    }
+    .hero-content h1 {
+        font-size: 2.5rem !important; /* Fix huge text */
+    }
+    .hero-subtitle {
+        font-size: 1rem !important;
+    }
+    .hero-buttons {
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .products-grid {
+        grid-template-columns: 1fr !important;
+        padding: 0 10px !important;
+    }
+    .product-card {
+        margin-bottom: 1rem;
+    }
+    .product-image img {
+        max-height: 250px !important;
+        object-fit: contain;
+    }
+    .cart-sidebar {
+        width: 100% !important;
+    }
+    .floating-whatsapp {
+        bottom: 20px !important;
+        right: 20px !important;
+    }
+}
