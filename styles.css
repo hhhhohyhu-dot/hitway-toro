@@ -1140,3 +1140,40 @@ footer p {
         right: 15px;
     }
 }
+
+/* --- Video Section --- */
+.video-section {
+    padding: 4rem 5%;
+    text-align: center;
+    background-color: var(--surface-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.video-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.video-title i {
+    color: var(--primary-color);
+}
+
+.instagram-embed {
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    background: #000;
+}
+
+@media screen and (max-width: 768px) {
+    .video-title {
+        font-size: 1.5rem;
+    }
+}
